@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>42Berlin Ascender</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="retro-container">
+    <header class="retro-header">
+      <h1>42Berlin Ascender</h1>
+      <p>Dec '25 Curriculum: Python & AI</p>
+    </header>
+
+    <div class="quest-log">
+      <h2 class="section-title">> Quest Log</h2>
+      <ul id="module-list" class="module-list">
+        <!-- Modules injected via JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Native HTML5 Dialog for accessible modals -->
+  <dialog id="reward-modal" class="retro-modal">
+    <div class="modal-content">
+      <h2 id="modal-title">LEVEL UP!</h2>
+      <p id="modal-message">Module completed.</p>
+      
+      <div class="reward-box">
+        <p>Loot Unlocked:</p>
+        <a href="#" id="modal-link" target="_blank" class="retro-btn action-btn">Play Minigame</a>
+      </div>
+      
+      <button id="close-modal-btn" class="retro-btn secondary-btn">Return to Hub</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
